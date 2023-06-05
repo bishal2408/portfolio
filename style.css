@@ -59,6 +59,7 @@ a {
 }
 .hero {
     background: #060518;
+    margin-bottom: 8rem;
 }
 
 .hero-content {
@@ -125,12 +126,12 @@ a {
     background: #7562E0;
     transition: 500ms ;
 }
-.hidden {
+/* .hidden {
     height: auto;
     background: #010113;
     margin-bottom: 2rem;
 
-}
+} */
 
 
 
@@ -149,7 +150,7 @@ a {
 
 .about-desc {
     font-size: 1rem;
-    width: 90%;
+    width: 60%;
     text-align: justify;
     line-height: 170%;  
     word-spacing: .1rem;
@@ -164,7 +165,7 @@ a {
     font-weight: 600px;
     word-spacing: .1rem;
     line-height: 170%;  
-
+    width: 90%;
 }
 .years {
     color: #7562E0;
@@ -230,8 +231,8 @@ a {
 
 .service {
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 1.5rem 3rem;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 1.5rem 1.5rem;
     text-align: center;
 }
 
@@ -241,6 +242,7 @@ a {
 .service .card div {
     margin: 1rem;
 }
+
 .service .card i {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -596,7 +598,7 @@ a {
     .few-skills {
        display: grid;
        grid-template-columns: auto auto;
-       gap: 2rem;
+       gap: 1rem 1rem;
     }
 
     .few-skills .skill p {
@@ -610,6 +612,11 @@ a {
     .projects .card {
         width: 40%;
         margin-right: auto;
+    }
+
+    .service .card {
+        height: auto;
+        padding: 0;
     }
 }
 
@@ -659,10 +666,10 @@ a {
         margin-top: -2rem;
     }
     
-    .hidden {
-        height: 13vh;
+    /* .hidden {
+        height: 10rem;
         margin-bottom: 5rem;
-    }
+    } */
 
     .about-me {
         width: 85%;
@@ -690,7 +697,7 @@ a {
     }
 
     .few-skills .card {
-        height: 18vh;
+        height: auto;
     }
 
     .few-skills .skill {
@@ -702,13 +709,12 @@ a {
     }
 
     .service {
-        display: grid;
         grid-template-columns: 47% 47%;
         gap: 1rem 1rem;
     }
 
     .service .card {
-        height: 18vh;
+        height: auto;
     }
 
     .service .card div{
@@ -820,20 +826,16 @@ a {
 }
 
 @media screen and (max-width: 415px) {
-    .service {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        /* height: auto; */
+
+    .few-skills .card {
+        height: auto;
     }
 
     .service .card {
         padding: 0;
-    }
-    .service .card div {
         height: auto;
     }
 }
-
 
 @media screen and (max-width: 360px) {
     .few-skills{
