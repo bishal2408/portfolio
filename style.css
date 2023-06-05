@@ -48,7 +48,15 @@ a {
     transition: 500ms;
 }
 
+.download-btn {
+    font-size: .9rem;
+    font-weight: 400;
+}
 
+.download-btn:hover {
+    background-color: #7562E0;
+    color: white;
+}
 .hero {
     background: #060518;
 }
@@ -445,9 +453,8 @@ a {
 
 .responsive-nav {
     display: none;
+    padding-bottom: 20px;
 }
-
-
 
 .responsive .responsive-nav .nav-item {
     width: 100%;
