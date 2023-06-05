@@ -11,7 +11,6 @@ function toggleNavMenu() {
 
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  console.log('I am here');
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
     
