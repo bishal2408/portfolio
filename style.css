@@ -627,15 +627,11 @@ a {
         margin: auto;
     }
     .hero {
-        margin-top: -1rem;
-        height: 40vh;
-        position: relative;
+        margin-bottom: 4rem;
     }
     .hero-content {
         display: block;
         width: 85%;
-        margin: auto;
-        
     }
 
     .greeting {
@@ -660,8 +656,8 @@ a {
     .hero-content .my-image img {
         border: 1px solid black;
         border-radius: 50%;
-        background: black;
-        width: 40vw;
+        background: #060518;
+        width: 170px;
         height: auto;
         margin-top: -2rem;
     }
