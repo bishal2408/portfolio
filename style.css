@@ -628,6 +628,7 @@ a {
     }
     .hero {
         margin-bottom: 4rem;
+        margin-top: -2rem;
     }
     .hero-content {
         display: block;
