@@ -27,6 +27,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 function sendEmail(event)
 {
   event.preventDefault(); 
+  document.getElementById('spinner').style.display = "block";
+  document.getElementById('send-text').style.display = "none";
+  document.getElementById('submit-button').className += " spinner-button";
   var params = {
     from_name: document.getElementById('name').value,
     email_id: document.getElementById('email').value,
@@ -38,14 +41,25 @@ function sendEmail(event)
   emailjs.send(serviceId,templateId, params)
   .then(
     res => {
+      document.getElementById('submit-button').classList.remove("spinner-button");
       document.getElementById('name').value = "";
       document.getElementById('email').value = "";
       document.getElementById('message').value = "";
+
+      document.getElementById('success-msg').style.display = "block";
+      document.getElementById('spinner').style.display = "none";
+      document.getElementById('send-text').style.display = "block";
       console.log(res);
-      alert('Your message has been sent!');
     }
-  ).catch((err) => console.log(err));
+  ).catch((err) => document.getElementById('error-msg').style.display = "block");
 }
 
 
 
+// function sendEmail(event)
+// {
+//   event.preventDefault(); 
+//   document.getElementById('spinner').style.display = "block";
+//   document.getElementById('send-text').style.display = "none";
+//   document.getElementById('submit-button').className += " spinner-button";
+// }

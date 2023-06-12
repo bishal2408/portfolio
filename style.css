@@ -1,130 +1,130 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-body{
-    background: #060518;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
+body {
+  background: #060518;
+  color: white;
+  font-family: "Open Sans", sans-serif;
 }
 header {
-    background: #010113;
+  background: #010113;
 }
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .nav {
-    width: 80%;
-    height: 12vh;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  width: 80%;
+  height: 12vh;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .dev-name {
-   font-size: 1.2rem;
-   font-weight: 500;
-   letter-spacing: .1rem;
-   color: #7562E0;;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  color: #7562e0;
 }
 
-.nav-item{
-    font-size: .9rem;
-    margin-left: 15px;
-    margin-right: 15px;
+.nav-item {
+  font-size: 0.9rem;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .active {
-    color: #7562E0;
+  color: #7562e0;
 }
 
 .nav-item:hover {
-    color: #7562E0;
-    transition: 500ms;
+  color: #7562e0;
+  transition: 500ms;
 }
 
 .download-btn {
-    font-size: .9rem;
-    font-weight: 400;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 .download-btn:hover {
-    background-color: #7562E0;
-    color: white;
+  background-color: #7562e0;
+  color: white;
 }
 .hero {
-    background: #060518;
-    margin-bottom: 8rem;
+  background: #060518;
+  margin-bottom: 8rem;
 }
 
 .hero-content {
-    width: 80%;
-    height: auto;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .introduction {
-    width: 100%;
-    margin-top: 130px;
+  width: 100%;
+  margin-top: 130px;
 }
 
 .my-image {
-    width: 35%;
-    margin-top: 5rem;
+  width: 35%;
+  margin-top: 5rem;
 }
 
 .my-image img {
-    height: 350px;
-    width: 350px;
+  height: 350px;
+  width: 350px;
 }
 
 .greeting {
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .my-name {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: .5rem;
-    color: #7562E0;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #7562e0;
 }
 
 .my-desc {
-    font-size: 1.1rem;
-    font-weight: 200;
-    line-height: 170%;
-    margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 200;
+  line-height: 170%;
+  margin-bottom: 1.5rem;
 }
 
 .btn {
-    border: 1px solid #7562E0;
-    border-radius: 7px;
-    padding: 7px 15px;
-    font-weight: 500;
+  border: 1px solid #7562e0;
+  border-radius: 7px;
+  padding: 7px 15px;
+  font-weight: 500;
 }
 
 .about-btn {
-    margin-right: 1.5rem;
-    background: #7562E0;
+  margin-right: 1.5rem;
+  background: #7562e0;
 }
 
 .about-btn:hover {
-    background-color: #010113;
-    transition: 500ms;
+  background-color: #010113;
+  transition: 500ms;
 }
 .project-btn:hover {
-    background: #7562E0;
-    transition: 500ms ;
+  background: #7562e0;
+  transition: 500ms;
 }
 /* .hidden {
     height: auto;
@@ -133,721 +133,771 @@ a {
 
 } */
 
-
-
-.about-me{
-    width: 80%;
-    margin: auto;
+.about-me {
+  width: 80%;
+  margin: auto;
 }
 
-
 .about-text {
-    color: #7562E0;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
+  color: #7562e0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .about-desc {
-    font-size: 1rem;
-    width: 60%;
-    text-align: justify;
-    line-height: 170%;  
-    word-spacing: .1rem;
-    margin-bottom: 1rem;
+  font-size: 1rem;
+  width: 60%;
+  text-align: justify;
+  line-height: 170%;
+  word-spacing: 0.1rem;
+  margin-bottom: 1rem;
 }
 .about-years {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .exp {
-    font-weight: 600px;
-    word-spacing: .1rem;
-    line-height: 170%;  
-    width: 90%;
+  font-weight: 600px;
+  word-spacing: 0.1rem;
+  line-height: 170%;
+  width: 90%;
 }
 .years {
-    color: #7562E0;
-    font-size: 5rem;
-    font-weight: bold;
-    margin-right: 1.5rem;
+  color: #7562e0;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-right: 1.5rem;
 }
 
 .few-skills {
-    width: 100%;
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
-    gap: 0 1.5rem;
+  width: 100%;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  gap: 0 1.5rem;
 }
 
 .card {
-    border: 1px solid #7562E0;
-    border-radius: 5px;
-    height: auto;
-    padding: 20px;
+  border: 1px solid #7562e0;
+  border-radius: 5px;
+  height: auto;
+  padding: 20px;
 }
 
 .skill {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 .first-card {
-    background: #7562E0;
+  background: #7562e0;
 }
 .skill-name {
-    width: 39%;
+  width: 39%;
 }
 
 .skill p {
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: .1rem;
-    line-height: 150%;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  line-height: 150%;
 }
 
 .skill i {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 .sample {
-    background: #818080;
-    border: none;
+  background: #818080;
+  border: none;
 }
 .sample:hover {
-    background: #7562E0;
-    transition: 500ms;
+  background: #7562e0;
+  transition: 500ms;
 }
 
 .services {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 .service-title {
-    color: #7562E0;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 2rem;
+  color: #7562e0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
 }
 
 .service {
-    display: grid;
-    grid-template-columns:repeat(3, 1fr);
-    gap: 1.5rem 1.5rem;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem 1.5rem;
+  text-align: center;
 }
 
 .service .card {
-    height: auto;
+  height: auto;
 }
 .service .card div {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 .service .card i {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .service-name {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .service-desc {
-    width: 100%;
-    margin: auto;
-    line-height: 180%;
+  width: 100%;
+  margin: auto;
+  line-height: 180%;
 }
 .service .card:nth-child(even) {
-    border: 1px solid rgb(179, 179, 179);
+  border: 1px solid rgb(179, 179, 179);
 }
 
 .service .card:hover {
-    border: 1px solid #7562E0;
-    transition: 500ms;
+  border: 1px solid #7562e0;
+  transition: 500ms;
 }
 
 .featured-project {
-    width: 80%;
-    margin: auto;
-    margin-top: 5rem;
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
 }
 
 .featured-title {
-    color: #7562E0;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
+  color: #7562e0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
 }
 
 .featured-desc {
-    font-size: 1rem;
-    line-height: 200%;
-    width: 90%;
+  font-size: 1rem;
+  line-height: 200%;
+  width: 90%;
 }
 
 .projects {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .projects .card {
-    width: 25%;
-    padding: 20px;
-    height: auto;
-    margin-right: auto;
-    margin-bottom: 2.4rem;
+  width: 25%;
+  padding: 20px;
+  height: auto;
+  margin-right: auto;
+  margin-bottom: 2.4rem;
 }
 
 .project-img img {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .project {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .project-title {
-    color: #7562E0;
-    font-weight: 500;
-    margin-bottom: 1rem;
+  color: #7562e0;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .project-desc {
-    line-height: 150%;
-    font-weight: 400;
+  line-height: 150%;
+  font-weight: 400;
 }
 
 .project-nav {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .projects .card:nth-child(even) {
-    border: 1px solid rgb(179, 179, 179);
+  border: 1px solid rgb(179, 179, 179);
 }
 
 .projects .card:hover {
-    border: 1px solid #7562E0;
-    transition: 500ms;
+  border: 1px solid #7562e0;
+  transition: 500ms;
 }
 
 .connect-contact {
-    width: 80%;
-    margin: auto;
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: row;
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: row;
 }
 .connect {
-    /* margin-right: 15rem; */
-    
-    margin-right: 15vw;
+  /* margin-right: 15rem; */
+
+  margin-right: 15vw;
 }
 .connect-text {
-    color: #7562E0;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+  color: #7562e0;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .connect-desc {
-    font-size: 1.1rem;
-    word-spacing: .2rem;
-    font-weight: 300;
+  font-size: 1.1rem;
+  word-spacing: 0.2rem;
+  font-weight: 300;
 }
 
 .socials {
-    margin-top: 1.2rem;
+  margin-top: 1.2rem;
 }
 
 .socials i {
-    font-size: 1.3rem;
-    color: #7562E0;
-    margin-right: .5rem;
+  font-size: 1.3rem;
+  color: #7562e0;
+  margin-right: 0.5rem;
 }
 
 .socials i:hover {
-    color: #3f3481;
-    transition: 500ms;
+  color: #3f3481;
+  transition: 500ms;
 }
 
 .contact {
-    margin-top: 0;
+  margin-top: 0;
 }
 .contact-text {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    letter-spacing: .05rem;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  letter-spacing: 0.05rem;
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-form input {
-    background: #040313;
-    font-size: 1rem;
-    color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-bottom: .8em;
-    box-sizing: border-box;
-    border: 3px solid none;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
+  background: #040313;
+  font-size: 1rem;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 0.8em;
+  box-sizing: border-box;
+  border: 3px solid none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
 }
 .contact-form input:focus {
-    border: 1px solid #7562E0;
+  border: 1px solid #7562e0;
 }
 
 .contact-form #name {
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
 .contact-form #email {
-    padding: 15px 20px;
+  padding: 15px 20px;
 }
 .contact-form #message {
-    padding: 25px 20px;
+  padding: 25px 20px;
 }
-.contact-form button {
-    border: 1px solid #7562E0;
-    border-radius: 7px;
-    padding: 7px 15px;
-    font-weight: 500;
-    background: #7562E0;
-    color: white;
-    width: 25%;
-    margin-top: 1rem;
-    cursor: pointer;
+.submit-button {
+  border: 1px solid #7562e0;
+  border-radius: 7px;
+  padding: 7px 15px;
+  font-weight: 500;
+  background: #7562e0;
+  color: white;
+  width: 25%;
+  margin-top: 1rem;
+  cursor: pointer;
 }
 
-.contact-form button:hover {
-    background: #060518;
-    transition: 500ms;
+.spinner-button {
+    width: 15%;
+    padding: auto;
+}
+.submit-button:hover {
+  background: #060518;
+  transition: 500ms;
 }
 
 .footer {
-    width: 80%;
-    margin: auto;
-    margin-top: 7rem;
+  width: 80%;
+  margin: auto;
+  margin-top: 7rem;
 }
 
 .footer-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: #818080;
-    font-size: .9rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #818080;
+  font-size: 0.9rem;
 }
 
 .footer .socials {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .toggle-button {
-    display: none;
+  display: none;
 }
 
 .responsive-nav {
-    display: none;
-    padding-bottom: 20px;
+  display: none;
+  padding-bottom: 20px;
 }
 
 .responsive .responsive-nav .nav-item {
-    width: 100%;
-    padding: 10px;
+  width: 100%;
+  padding: 10px;
 }
+
+.alert {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 20px;
+  background-color: #060518;
+  border: 1px solid #3f3481;
+  border-radius: 5px;
+  display: none;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+.loader {
+    display: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #fff;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media screen and (max-width: 1284px) {
-    .projects .card {
-        width: 28%;
-    }
-    .project-nav .about-btn, .project-nav .project-btn{
-        font-size: .9rem;
-    }
+  .projects .card {
+    width: 28%;
+  }
+  .project-nav .about-btn,
+  .project-nav .project-btn {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 1074px) {
-    .toggle-button {
-        display: block;
-        float: right;
-    }
-    
-    .nav-item{
-        display: none;
-    }
-    .nav {
-        width: 80%;
-        margin: auto;
-    }
-    .responsive .responsive-nav, .responsive .responsive-nav .nav-item{
-        display: block;
-        width: 89%;
-        margin: auto;
-    }
-    .hero-content {
-        display: flex;
-        flex-direction: row-reverse;
-    }
+  .toggle-button {
+    display: block;
+    float: right;
+  }
 
-    .hero-content .introduction {
-        width: 100%;
-        margin: 0;
-        margin-top: 4rem;
-    }
+  .nav-item {
+    display: none;
+  }
+  .nav {
+    width: 80%;
+    margin: auto;
+  }
+  .responsive .responsive-nav,
+  .responsive .responsive-nav .nav-item {
+    display: block;
+    width: 89%;
+    margin: auto;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 
-    .hero-content .greeting {
-        font-size: 1.2rem;
-    }
-    .hero-content .my-name {
-        font-size: 1.7rem;
-    } 
-    .hero-content .my-desc {
-        font-size: 1rem;
-    }
-    .hero-content a {
-        font-size: .8rem;
-    }
-    .hero-content .my-image {
-        width: 50%;
-        margin-right: 3rem;
-    }
-    .hero-content .my-image img {
-        width: 250px;
-        height: 250px;
-    }
+  .hero-content .introduction {
+    width: 100%;
+    margin: 0;
+    margin-top: 4rem;
+  }
 
-    .about-text {
-        font-size: 1.3rem;
-    }
+  .hero-content .greeting {
+    font-size: 1.2rem;
+  }
+  .hero-content .my-name {
+    font-size: 1.7rem;
+  }
+  .hero-content .my-desc {
+    font-size: 1rem;
+  }
+  .hero-content a {
+    font-size: 0.8rem;
+  }
+  .hero-content .my-image {
+    width: 50%;
+    margin-right: 3rem;
+  }
+  .hero-content .my-image img {
+    width: 250px;
+    height: 250px;
+  }
 
-    .few-skills .skill p{
-        font-size: 1rem;
-    }
+  .about-text {
+    font-size: 1.3rem;
+  }
 
-    .service-title {
-        font-size: 1.3rem;
-    }
+  .few-skills .skill p {
+    font-size: 1rem;
+  }
 
-    .service .card div {
-        margin: 1rem;
-    }
-    .service .card p {
-        font-size: .8rem;
-    }
-    .service-name {
-        margin-top: 1rem;
-    }
+  .service-title {
+    font-size: 1.3rem;
+  }
 
-    .featured-title {
-        font-size: 1.3rem;
-    }
-    .projects{
-        display: flex;
-    }
-    .projects .card {
-        padding: 10px;
-        width: 28%;
-        margin-right: 1.2rem;
-        margin-bottom: 1.5rem;
-        height: auto;
-    }
-    .project-title {
-        font-size: 1rem;
-    }
-    .project-desc {
-        font-size: .7rem;
-    }
-    .projects .about-btn, .projects .project-btn {
-        font-size: .7rem;
-        padding: 6px 8px;
-    }
+  .service .card div {
+    margin: 1rem;
+  }
+  .service .card p {
+    font-size: 0.8rem;
+  }
+  .service-name {
+    margin-top: 1rem;
+  }
 
-    .connect-text {
-        font-size: 1.3rem;
-    }
+  .featured-title {
+    font-size: 1.3rem;
+  }
+  .projects {
+    display: flex;
+  }
+  .projects .card {
+    padding: 10px;
+    width: 28%;
+    margin-right: 1.2rem;
+    margin-bottom: 1.5rem;
+    height: auto;
+  }
+  .project-title {
+    font-size: 1rem;
+  }
+  .project-desc {
+    font-size: 0.7rem;
+  }
+  .projects .about-btn,
+  .projects .project-btn {
+    font-size: 0.7rem;
+    padding: 6px 8px;
+  }
 
-    .connect-desc {
-        font-size: 1rem;
-    }
+  .connect-text {
+    font-size: 1.3rem;
+  }
 
-    .socials a {
-        font-size: 1rem;
-    }
+  .connect-desc {
+    font-size: 1rem;
+  }
 
-    .contact-text {
-        font-size: 1.2rem;
-    }
+  .socials a {
+    font-size: 1rem;
+  }
 
-    .footer-content {
-        font-size: .9rem;
-    }
+  .contact-text {
+    font-size: 1.2rem;
+  }
+
+  .footer-content {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 960px) {
-    .service {
-       display: grid;
-       grid-template-columns: auto auto;
-    }
+  .service {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
 @media screen and (max-width: 875px) {
-    .few-skills {
-       display: grid;
-       grid-template-columns: auto auto;
-       gap: 1rem 1rem;
-    }
+  .few-skills {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem 1rem;
+  }
 
-    .few-skills .skill p {
-        font-size: .9rem;
-    }
-    .projects {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .few-skills .skill p {
+    font-size: 0.9rem;
+  }
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .projects .card {
-        width: 40%;
-        margin-right: auto;
-    }
+  .projects .card {
+    width: 40%;
+    margin-right: auto;
+  }
 
-    .service .card {
-        height: auto;
-        padding: 0;
-    }
+  .service .card {
+    height: auto;
+    padding: 0;
+  }
 }
 
-@media screen and (max-width: 690px){
-    .nav {
-        height: 8vh;
-        width: 85%;
-        margin: auto;
-    }
-    .hero {
-        margin-bottom: 4rem;
-        margin-top: -2rem;
-    }
-    .hero-content {
-        display: block;
-        width: 85%;
-    }
+@media screen and (max-width: 690px) {
+  .nav {
+    height: 8vh;
+    width: 85%;
+    margin: auto;
+  }
+  .hero {
+    margin-bottom: 4rem;
+    margin-top: -2rem;
+  }
+  .hero-content {
+    display: block;
+    width: 85%;
+  }
 
-    .greeting {
-        font-size: 1.1rem;
-    }
+  .greeting {
+    font-size: 1.1rem;
+  }
 
-    .my-desc {
-        font-size: 1rem;
-    }
+  .my-desc {
+    font-size: 1rem;
+  }
 
-    .hero .about-btn, .hero .project-btn {
-        font-size: .8rem;
-        padding: 5px 10px;
-    }
+  .hero .about-btn,
+  .hero .project-btn {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
 
-    .hero .my-image {
-        width: 100%;
-        text-align: center;
-    } 
+  .hero .my-image {
+    width: 100%;
+    text-align: center;
+  }
 
+  .hero-content .my-image img {
+    border: 1px solid black;
+    border-radius: 50%;
+    background: #060518;
+    width: 170px;
+    height: auto;
+    margin-top: -2rem;
+  }
 
-    .hero-content .my-image img {
-        border: 1px solid black;
-        border-radius: 50%;
-        background: #060518;
-        width: 170px;
-        height: auto;
-        margin-top: -2rem;
-    }
-    
-    /* .hidden {
+  /* .hidden {
         height: 10rem;
         margin-bottom: 5rem;
     } */
 
-    .about-me {
-        width: 85%;
-        margin: auto;
-    }
-    .about-text {
-        font-size: 1.1rem;
-    }
-    .about-desc {
-        font-size: 1rem;
-        word-spacing: 0rem;
-        width: 100%;
-        font-weight: 300;
-        margin-bottom: 2rem;
-    }
+  .about-me {
+    width: 85%;
+    margin: auto;
+  }
+  .about-text {
+    font-size: 1.1rem;
+  }
+  .about-desc {
+    font-size: 1rem;
+    word-spacing: 0rem;
+    width: 100%;
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
 
-    .exp {
-        font-weight: 300;
-        margin-bottom: 2rem;
-    }
+  .exp {
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
 
-    .few-skills {
-        display: grid;
-        grid-template-columns: 47% 47%;
-    }
+  .few-skills {
+    display: grid;
+    grid-template-columns: 47% 47%;
+  }
 
-    .few-skills .card {
-        height: auto;
-    }
+  .few-skills .card {
+    height: auto;
+  }
 
-    .few-skills .skill {
-        margin-top: 3.5rem;
-    }
+  .few-skills .skill {
+    margin-top: 3.5rem;
+  }
 
-    .service-title {
-        font: 1.1rem;
-    }
+  .service-title {
+    font: 1.1rem;
+  }
 
-    .service {
-        grid-template-columns: 47% 47%;
-        gap: 1rem 1rem;
-    }
+  .service {
+    grid-template-columns: 47% 47%;
+    gap: 1rem 1rem;
+  }
 
-    .service .card {
-        height: auto;
-    }
+  .service .card {
+    height: auto;
+  }
 
-    .service .card div{
-        margin-top: 1.5rem;
-    }
-    .service .card i {
-        font-size: .8rem;
-    }
+  .service .card div {
+    margin-top: 1.5rem;
+  }
+  .service .card i {
+    font-size: 0.8rem;
+  }
 
-    .service-name {
-        margin: 0;
-        margin-bottom: 1rem;
-    }
+  .service-name {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
 
-    .service .card p {
-        font-size: .7rem;
-    }
+  .service .card p {
+    font-size: 0.7rem;
+  }
 
-    .featured-project {
-        width: 85%;
-    }
-    .featured-title {
-        font-size: 1.1rem;
-    }
+  .featured-project {
+    width: 85%;
+  }
+  .featured-title {
+    font-size: 1.1rem;
+  }
 
-    .featured-desc {
-        font-size: 1rem;
-        font-weight: 300;
-        width: 100%;
-    }
+  .featured-desc {
+    font-size: 1rem;
+    font-weight: 300;
+    width: 100%;
+  }
 
-    .projects .card {
-        height: auto;
-        width: 100%;
-        padding: 20px;
-        margin-bottom: 1rem;
-    }
+  .projects .card {
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 1rem;
+  }
 
-    .project-img img {
-        width: 100%;
-    }
-    .project {
-        margin-top: 1rem;
-    }
-    .project-title {
-        font-size: .9rem;
-    }
+  .project-img img {
+    width: 100%;
+  }
+  .project {
+    margin-top: 1rem;
+  }
+  .project-title {
+    font-size: 0.9rem;
+  }
 
-    .project-nav {
-        margin-top: 1rem;
-    }
+  .project-nav {
+    margin-top: 1rem;
+  }
 
-    .projects .about-btn, .projects .project-btn {
-        font-size: .6rem;
-        margin: 0;
-    }
+  .projects .about-btn,
+  .projects .project-btn {
+    font-size: 0.6rem;
+    margin: 0;
+  }
 
-    .connect-contact {
-        display: block;
-        width: 85%;
-        margin: auto;
-        margin-top: 3rem;
-    }
+  .connect-contact {
+    display: block;
+    width: 85%;
+    margin: auto;
+    margin-top: 3rem;
+  }
 
-    .connect {
-        width: 100%;
-    }
+  .connect {
+    width: 100%;
+  }
 
-    .connect-desc {
-        font-size: 1.1rem;
-    }
+  .connect-desc {
+    font-size: 1.1rem;
+  }
 
-    .connect-desc {
-        font-weight: 300;
-        font-size: 1rem;
-    }
+  .connect-desc {
+    font-weight: 300;
+    font-size: 1rem;
+  }
 
-    .socials i {
-        font-size: 1rem;
-    }
+  .socials i {
+    font-size: 1rem;
+  }
 
-    .contact {
-        margin-top: 2rem;
-    }
+  .contact {
+    margin-top: 2rem;
+  }
 
-    .contact-text {
-        font-size: 1rem;
-        font-weight: 300;
-    }
+  .contact-text {
+    font-size: 1rem;
+    font-weight: 300;
+  }
 
-    .contact-form input {
-        width: 100%;
-    }
+  .contact-form input {
+    width: 100%;
+  }
 
-    .footer {
-        width: 85%;
-        margin: auto;
-        margin-top: 5rem;
-    }
-    
-    .footer-content {
-        display: inline;
-    }
-    .footer-content p {
-        display: inline-block;
-        margin-bottom: 5px;
-        margin-right: 1rem;
-    }
+  .footer {
+    width: 85%;
+    margin: auto;
+    margin-top: 5rem;
+  }
+
+  .footer-content {
+    display: inline;
+  }
+  .footer-content p {
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 1rem;
+  }
 }
 
 @media screen and (max-width: 415px) {
+  .few-skills .card {
+    height: auto;
+  }
 
-    .few-skills .card {
-        height: auto;
-    }
-
-    .service .card {
-        padding: 0;
-        height: auto;
-    }
+  .service .card {
+    padding: 0;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 360px) {
-    .few-skills{
-        display: block;
-    }
+  .few-skills {
+    display: block;
+  }
 
-    .few-skills .card {
-        margin-bottom: 1rem;
-    }
+  .few-skills .card {
+    margin-bottom: 1rem;
+  }
 
-    .service {
-        display: block;
-    }
+  .service {
+    display: block;
+  }
 
-    .service .card {
-        margin-bottom: 1rem;
-    }
+  .service .card {
+    margin-bottom: 1rem;
+  }
 }

@@ -247,7 +247,18 @@
       </div>
     </section>
 
+    <div class="alert" id="success-msg">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <strong>Success!</strong> Message has been sent.
+    </div>
+
+    <div class="alert" id="error-msg">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <strong>Error!</strong> Please try again later.
+    </div>
+
     <section class="connect-contact" id="connect-contact">
+      
       <div class="connect">
         <p class="connect-text">Connect with me:</p>
         <p class="connect-desc">Satisfied with me? Please contact me</p>
@@ -265,8 +276,14 @@
           <input type="text" name="name" id="name" placeholder="Name:" required>
           <input type="email" name="email" id="email" placeholder="Email:" required>
           <input type="text" name="message" id="message" placeholder="Message:" required>
-          <button>Send</button>
+          <button class="submit-button" id="submit-button">
+            <p>
+              <span style="margin-right: 5px;" id="send-text">Send</span>
+              <span class="loader" id="spinner"></span>
+            </p>
+          </button>
         </form>
+
       </div>
     </section>
 
