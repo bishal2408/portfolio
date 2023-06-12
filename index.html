@@ -19,6 +19,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("iIgUn0CE1W0roAOZD");
+      })();
+    </script>
+    
     <title>Portfolio - Bishal Lamichhane</title>
   </head>
   <body>
@@ -249,12 +259,12 @@
         </div>
       </div>
       <div class="contact">
-        <p class="contact-text">Contact me, let’s make magic together</p>
+        <p class="contact-text">Contact me, let's make magic together</p>
 
-        <form action="" class="contact-form">
-          <input type="text" name="name" id="name" placeholder="Name:">
-          <input type="email" name="email" id="email" placeholder="Email:">
-          <input type="text" name="message" id="message" placeholder="Message:">
+        <form onsubmit="sendEmail(event)" class="contact-form">
+          <input type="text" name="name" id="name" placeholder="Name:" required>
+          <input type="email" name="email" id="email" placeholder="Email:" required>
+          <input type="text" name="message" id="message" placeholder="Message:" required>
           <button>Send</button>
         </form>
       </div>

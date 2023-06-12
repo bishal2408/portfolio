@@ -23,3 +23,29 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+function sendEmail(event)
+{
+  event.preventDefault(); 
+  var params = {
+    from_name: document.getElementById('name').value,
+    email_id: document.getElementById('email').value,
+    message: document.getElementById('message').value
+  }
+  const serviceId = 'service_1bsxwxf';
+  const templateId = 'template_crmj3x4';
+
+  emailjs.send(serviceId,templateId, params)
+  .then(
+    res => {
+      document.getElementById('name').value = "";
+      document.getElementById('email').value = "";
+      document.getElementById('message').value = "";
+      console.log(res);
+      alert('Your message has been sent!');
+    }
+  ).catch((err) => console.log(err));
+}
+
+
+
