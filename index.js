@@ -53,13 +53,3 @@ function sendEmail(event)
     }
   ).catch((err) => document.getElementById('error-msg').style.display = "block");
 }
-
-
-
-// function sendEmail(event)
-// {
-//   event.preventDefault(); 
-//   document.getElementById('spinner').style.display = "block";
-//   document.getElementById('send-text').style.display = "none";
-//   document.getElementById('submit-button').className += " spinner-button";
-// }
