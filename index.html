@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bishal Lamichhane - Laravel Artisan</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <div class="bg-canvas">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+      </div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Cursor Follower -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">bishalLamichhane</span>
+          <span class="logo-bracket">/&gt;</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link" data-text="Home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+          <li>
+            <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link" data-text="Projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
+          </li>
+        </ul>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-greeting">
+            <span class="greeting-text">Hello World, I'm</span>
+            <div class="greeting-decoration"></div>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-line">Bishal Lamichhane</span>
+            <span class="title-line title-accent">Laravel Artisan</span>
+          </h1>
+
+          <div class="hero-subtitle">
+            <p>Crafting digital experiences with elegant code</p>
+            <p>Building scalable web applications that matter</p>
+          </div>
+
+          <div class="code-window">
+            <div class="window-header">
+              <div class="window-controls">
+                <span class="control close"></span>
+                <span class="control minimize"></span>
+                <span class="control maximize"></span>
+              </div>
+              <div class="window-title">welcome.php</div>
+            </div>
+            <div class="code-content">
+              <pre><code><span class="line-number">1</span><span class="comment">// Bringing ideas to life</span>
+<span class="line-number">2</span><span class="keyword">class</span> <span class="class-name">Developer</span> <span class="keyword">extends</span> <span class="class-name">Human</span>
+<span class="line-number">3</span>{
+<span class="line-number">4</span>    <span class="keyword">public function</span> <span class="function">__construct</span>()
+<span class="line-number">5</span>    {
+<span class="line-number">6</span>        <span class="variable">$this</span>-><span class="property">passion</span> = <span class="string">'Laravel'</span>;
+<span class="line-number">7</span>        <span class="variable">$this</span>-><span class="property">mission</span> = <span class="string">'Build Amazing Things'</span>;
+<span class="line-number">8</span>    }
+<span class="line-number">9</span>}</code></pre>
+            </div>
+          </div>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn-primary">
+              <span class="btn-text">View My Work</span>
+              <span class="btn-icon">→</span>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <span class="btn-text">Let's Talk</span>
+              <span class="btn-icon">💬</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="floating-terminal">
+            <div class="terminal-header">
+              <div class="terminal-controls">
+                <span class="terminal-control red"></span>
+                <span class="terminal-control yellow"></span>
+                <span class="terminal-control green"></span>
+              </div>
+              <div class="terminal-title">~ php artisan serve</div>
+            </div>
+            <div class="terminal-body">
+              <div class="terminal-line">
+                <span class="prompt">$ </span>
+                <span class="command typing-animation"
+                  >php artisan make:awesome-app</span
+                >
+              </div>
+              <div class="terminal-output">
+                <div class="success-message">
+                  ✓ Application created successfully!
+                </div>
+                <div class="server-info">
+                  Laravel development server started
+                </div>
+                <div class="server-url">http://localhost:8000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span class="scroll-text">Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-decoration"></div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text">
+            <div class="text-block">
+              <p>
+                I'm a passionate Laravel developer who loves turning complex
+                problems into simple, beautiful solutions. My journey began in
+                2019 when I built my first web application – a simple task
+                manager that sparked my obsession with clean, efficient code.
+              </p>
+            </div>
+
+            <div class="text-block">
+              <p>
+                Today, I specialize in creating scalable web applications using
+                Laravel, Vue.js, and modern web technologies. I've had the
+                privilege of working with startups, agencies, and enterprises,
+                helping them build digital products that make a real impact.
+              </p>
+            </div>
+
+            <div class="text-block">
+              <p>
+                When I'm not coding, you'll find me exploring new technologies,
+                contributing to open source projects, or sharing knowledge with
+                the developer community.
+              </p>
+            </div>
+
+            <div class="stats-grid">
+              <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Projects Completed</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Client Satisfaction</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-visual">
+            <div class="profile-card">
+              <div class="card-glow"></div>
+              <div class="profile-image">
+                <div class="image-placeholder">
+                  <span class="dev-icon">👨‍💻</span>
+                </div>
+                <div class="status-indicator">
+                  <span class="status-dot"></span>
+                  <span class="status-text">Available for work</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2 class="section-title">Skills & Expertise</h2>
+          <div class="section-decoration"></div>
+        </div>
+
+        <div class="skills-content">
+          <div class="skills-categories">
+            <div class="skill-category active" data-category="backend">
+              <div class="category-icon">🚀</div>
+              <div class="category-name">Backend</div>
+            </div>
+            <div class="skill-category" data-category="frontend">
+              <div class="category-icon">🎨</div>
+              <div class="category-name">Frontend</div>
+            </div>
+            <div class="skill-category" data-category="database">
+              <div class="category-icon">💾</div>
+              <div class="category-name">Database</div>
+            </div>
+            <div class="skill-category" data-category="tools">
+              <div class="category-icon">🛠️</div>
+              <div class="category-name">Tools</div>
+            </div>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-item" data-category="backend">
+              <div class="skill-icon">
+                <img
+                  src="https://laravel.com/img/logomark.min.svg"
+                  alt="Laravel"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                />
+                <span style="display: none">L</span>
+              </div>
+              <div class="skill-info">
+                <div class="skill-name">Laravel</div>
+                <div class="skill-level">Intermediate</div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="95"></div>
+              </div>
+            </div>
+
+            <div class="skill-item" data-category="backend">
+              <div class="skill-icon">PHP</div>
+              <div class="skill-info">
+                <div class="skill-name">PHP 8+</div>
+                <div class="skill-level">Intermediate</div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="90"></div>
+              </div>
+            </div>
+            <!-- https://nodejs.org/static/images/favicons/favicon.png -->
+            <div class="skill-item" data-category="backend">
+              <div class="skill-icon">
+                <img
+                  src="https://nodejs.org/static/images/favicons/favicon.png"
+                  alt="Laravel"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                />
+                <span style="display: none">L</span>
+              </div>
+              <div class="skill-info">
+                <div class="skill-name">Node</div>
+                <div class="skill-level">Intermediate</div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="95"></div>
+              </div>
+            </div>
+
+            <div class="skill-item" data-category="frontend">
+              <div class="skill-icon">R</div>
+              <div class="skill-info">
+                <div class="skill-name">React</div>
+                <div class="skill-level">Beginner</div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="85"></div>
+              </div>
+            </div>
+
+            <div class="skill-item" data-category="frontend">
+              <div class="skill-icon">JS</div>
+              <div class="skill-info">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-level">Intermediate</div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="88"></div>
+              </div>
+            </div>
+
+            <div class="skill-item" data-category="frontend">
+              <div class="skill-icon">T</div>
+              <div class="skill-info">
+                <div class="skill-name">Tailwind CSS</div>
+                <div class="skill-level">Intermediate</div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="88"></div>
+              </div>
+            </div>
+
+            <div class="skill-item" data-category="database">
+              <div class="skill-icon">🗄️</div>
+              <div class="skill-info">
+                <div class="skill-name">MySQL</div>
+                <div class="skill-level">Intermediate</div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="82"></div>
+              </div>
+            </div>
+
+            <div class="skill-item" data-category="database">
+              <div class="skill-icon">🗄️</div>
+              <div class="skill-info">
+                <div class="skill-name">MongoDB</div>
+                <div class="skill-level">Advanced</div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="82"></div>
+              </div>
+            </div>
+
+            <div class="skill-item" data-category="tools">
+              <div class="skill-icon">🐳</div>
+              <div class="skill-info">
+                <div class="skill-name">Docker</div>
+                <div class="skill-level">Intermediate</div>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <h2 class="section-title">Experience</h2>
+          <div class="section-decoration"></div>
+        </div>
+        <div class="experience-timeline">
+          <div class="experience-item">
+            <div class="exp-header">
+              <span class="exp-role">Full Stack Developer</span>
+              <span class="exp-company">@ TechNova Solutions</span>
+              <span class="exp-duration">2023 – Present</span>
+            </div>
+            <div class="exp-description">
+              Building scalable SaaS products with Laravel, Vue.js, and AWS. Led
+              a team of 4 developers to deliver a project management platform
+              used by 500+ teams.
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="exp-header">
+              <span class="exp-role">Backend Developer</span>
+              <span class="exp-company">@ CodeCrafters Agency</span>
+              <span class="exp-duration">2021 – 2023</span>
+            </div>
+            <div class="exp-description">
+              Developed RESTful APIs and microservices in Laravel and Node.js
+              for e-commerce and education platforms. Improved API response
+              times by 30%.
+            </div>
+          </div>
+          <div class="experience-item">
+            <div class="exp-header">
+              <span class="exp-role">Junior Web Developer</span>
+              <span class="exp-company">@ DevStartups</span>
+              <span class="exp-duration">2019 – 2021</span>
+            </div>
+            <div class="exp-description">
+              Assisted in building and maintaining client websites, focusing on
+              clean code and responsive design. Gained hands-on experience with
+              Laravel and MySQL.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-decoration"></div>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card featured">
+            <div class="project-image">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <span class="link-icon">🔗</span>
+                    <span class="link-text">Live Demo</span>
+                  </a>
+                  <a href="#" class="project-link">
+                    <span class="link-icon">📱</span>
+                    <span class="link-text">GitHub</span>
+                  </a>
+                </div>
+              </div>
+              <div class="project-preview">
+                <div class="browser-mockup">
+                  <div class="browser-header">
+                    <div class="browser-controls">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="browser-url">taskflow.app</div>
+                  </div>
+                  <div class="browser-content">
+                    <div class="app-interface">
+                      <div class="sidebar"></div>
+                      <div class="main-content">
+                        <div class="content-block"></div>
+                        <div class="content-block"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-category">Featured Project</div>
+              <h3 class="project-title">TaskFlow - Project Management</h3>
+              <div class="project-description">
+                A comprehensive project management platform built with Laravel
+                and Vue.js. Features real-time collaboration, advanced
+                analytics, and seamless team coordination. Serves 500+ active
+                teams worldwide.
+              </div>
+              <div class="project-tech">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">WebSockets</span>
+                <span class="tech-tag">Redis</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <div class="project-category">E-Commerce</div>
+              <h3 class="project-title">EcoShop Platform</h3>
+              <div class="project-description">
+                Multi-vendor e-commerce platform with advanced inventory
+                management and integrated payment solutions.
+              </div>
+              <div class="project-tech">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">Stripe</span>
+                <span class="tech-tag">MySQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link-small">🔗 Demo</a>
+                <a href="#" class="project-link-small">📱 Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <div class="project-category">Education</div>
+              <h3 class="project-title">LearnHub LMS</h3>
+              <div class="project-description">
+                Modern learning management system with video streaming,
+                interactive assessments, and progress tracking.
+              </div>
+              <div class="project-tech">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">Livewire</span>
+                <span class="tech-tag">AWS S3</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link-small">🔗 Demo</a>
+                <a href="#" class="project-link-small">📱 Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <div class="project-category">SaaS</div>
+              <h3 class="project-title">InvoiceFlow</h3>
+              <div class="project-description">
+                Automated invoicing and billing system for freelancers and small
+                businesses with payment tracking.
+              </div>
+              <div class="project-tech">
+                <span class="tech-tag">Laravel</span>
+                <span class="tech-tag">Vue.js</span>
+                <span class="tech-tag">PDF Gen</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link-small">🔗 Demo</a>
+                <a href="#" class="project-link-small">📱 Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h2 class="section-title">Let's Build Something Amazing</h2>
+          <div class="section-decoration"></div>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-text">
+              <h3>Ready to start your next project?</h3>
+              <p>
+                I'm always excited to work on new challenges and bring
+                innovative ideas to life. Let's discuss how we can create
+                something extraordinary together.
+              </p>
+            </div>
+
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">📧</div>
+                <div class="method-info">
+                  <div class="method-label">Email</div>
+                  <div class="method-value">bishallamichhane24@gmail.com</div>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="method-icon">💬</div>
+                <div class="method-info">
+                  <div class="method-label">Response Time</div>
+                  <div class="method-value">Within 24 hours</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <form class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required />
+                  <span class="form-underline"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
+                  <span class="form-underline"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+                <span class="form-underline"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+                <span class="form-underline"></span>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-loading">
+                  <div class="loading-spinner"></div>
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-info">
+            <div class="footer-logo">
+              <span class="logo-bracket">&lt;</span>
+              <span class="logo-text">bishalLamichhane</span>
+              <span class="logo-bracket">/&gt;</span>
+            </div>
+            <p class="footer-description">
+              Crafting digital experiences with Laravel and modern web
+              technologies.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <div class="link-group">
+              <h4>Navigation</h4>
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#skills">Skills</a>
+              <a href="#projects">Projects</a>
+              <a href="#contact">Contact</a>
+            </div>
+
+            <div class="link-group">
+              <h4>Connect</h4>
+              <a href="#" target="_blank">GitHub</a>
+              <a href="#" target="_blank">LinkedIn</a>
+              <a href="#" target="_blank">Twitter</a>
+              <a href="#" target="_blank">Email</a>
+            </div>
+          </div>
+
+          <div class="footer-social">
+            <div class="social-links">
+              <a href="#" class="social-link" title="GitHub">
+                <span class="social-icon">🔗</span>
+              </a>
+              <a href="#" class="social-link" title="LinkedIn">
+                <span class="social-icon">💼</span>
+              </a>
+              <a href="#" class="social-link" title="Twitter">
+                <span class="social-icon">🐦</span>
+              </a>
+              <a href="#" class="social-link" title="Email">
+                <span class="social-icon">✉️</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Bishal Lamichhane. Crafted with 💜 and lots of ☕</p>
+          <div class="footer-made-with">
+            <span>Made with</span>
+            <span class="tech-heart">Laravel</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
