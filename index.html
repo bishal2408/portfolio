@@ -1,792 +1,668 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bishal Lamichhane - Backend Engineer</title>
+    <title>Bishal Lamichhane — Backend Engineer</title>
+    <meta
+      name="description"
+      content="Backend engineer specializing in Laravel, PHP and scalable multi-tenant SaaS systems. Based in Kathmandu, Nepal."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Animated Background -->
-    <div class="bg-canvas">
-      <div class="floating-shapes">
-        <div class="shape shape-1"></div>
-        <div class="shape shape-2"></div>
-        <div class="shape shape-3"></div>
-        <div class="shape shape-4"></div>
-        <div class="shape shape-5"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="grain" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <header class="nav" id="nav">
+      <div class="nav-inner">
+        <a href="#top" class="nav-mark">
+          <span class="mark-glyph">BL</span>
+          <span class="mark-label">Bishal&nbsp;Lamichhane</span>
+        </a>
+
+        <nav class="nav-links" id="nav-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#experience" class="nav-link">Experience</a>
+          <a href="#work" class="nav-link">Work</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a
+            href="assets/Bishal-Lamichhane-Resume.pdf"
+            class="nav-cta"
+            target="_blank"
+            rel="noopener"
+            >Résumé</a
+          >
+        </nav>
+
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <div class="grid-overlay"></div>
-    </div>
+    </header>
 
-    <!-- Cursor Follower -->
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="nav-container">
-        <div class="logo">
-          <span class="logo-bracket">&lt;</span>
-          <span class="logo-text">bishalLamichhane</span>
-          <span class="logo-bracket">/&gt;</span>
-        </div>
-        <ul class="nav-menu">
-          <li><a href="#home" class="nav-link" data-text="Home">Home</a></li>
-          <li><a href="#about" class="nav-link" data-text="About">About</a></li>
-          <li>
-            <a href="#skills" class="nav-link" data-text="Skills">Skills</a>
-          </li>
-          <li>
-            <a href="#projects" class="nav-link" data-text="Projects"
-              >Projects</a
-            >
-          </li>
-          <li>
-            <a href="#contact" class="nav-link" data-text="Contact">Contact</a>
-          </li>
-        </ul>
-        <div class="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="hero-container">
-        <div class="hero-content">
-          <div class="hero-greeting">
-            <span class="greeting-text">Hello World, I'm</span>
-            <div class="greeting-decoration"></div>
-          </div>
+    <main id="main">
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="top">
+        <div class="hero-inner">
+          <p class="eyebrow">
+            <span class="status-dot"></span>Open to opportunities &mdash;
+            Kathmandu, NP
+          </p>
 
           <h1 class="hero-title">
-            <span class="title-line">Bishal Lamichhane</span>
-            <span class="title-line title-accent">Backend Engineer</span>
+            <span class="hero-first">Bishal</span>
+            <span class="hero-last">Lamichhane</span>
           </h1>
 
-          <div class="hero-subtitle">
-            <p>Building scalable systems & high-performance APIs</p>
-            <p>2+ years crafting production-grade solutions</p>
-          </div>
+          <p class="hero-role">
+            Backend Engineer &mdash; Laravel &amp; PHP Systems
+          </p>
 
-          <div class="code-window">
-            <div class="window-header">
-              <div class="window-controls">
-                <span class="control close"></span>
-                <span class="control minimize"></span>
-                <span class="control maximize"></span>
-              </div>
-              <div class="window-title">developer.php</div>
-            </div>
-            <div class="code-content">
-              <pre><code><span class="line-number">1</span><span class="comment">// Optimizing systems, one query at a time</span>
-<span class="line-number">2</span><span class="keyword">class</span> <span class="class-name">BackendEngineer</span> <span class="keyword">extends</span> <span class="class-name">Developer</span>
-<span class="line-number">3</span>{
-<span class="line-number">4</span>    <span class="keyword">public function</span> <span class="function">__construct</span>()
-<span class="line-number">5</span>    {
-<span class="line-number">6</span>        <span class="variable">$this</span>-><span class="property">expertise</span> = <span class="string">'Laravel & PHP'</span>;
-<span class="line-number">7</span>        <span class="variable">$this</span>-><span class="property">mission</span> = <span class="string">'Build Scalable Solutions'</span>;
-<span class="line-number">8</span>    }
-<span class="line-number">9</span>}</code></pre>
-            </div>
-          </div>
+          <p class="hero-lede">
+            I design and ship scalable REST&nbsp;APIs, multi-tenant SaaS
+            architectures and high-performance backend systems. Two-plus years
+            turning legacy codebases into maintainable, well-indexed ones.
+          </p>
 
-          <div class="hero-cta">
-            <a href="#projects" class="btn-primary">
-              <span class="btn-text">View My Work</span>
-              <span class="btn-icon">→</span>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">
+              <span>View Work</span>
+              <svg class="icon" viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M3 8h10M9 4l4 4-4 4"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </a>
-            <a href="#contact" class="btn-secondary">
-              <span class="btn-text">Let's Talk</span>
-              <span class="btn-icon">💬</span>
+            <a
+              href="assets/Bishal-Lamichhane-Resume.pdf"
+              class="btn btn-ghost"
+              target="_blank"
+              rel="noopener"
+            >
+              <span>Download Résumé</span>
+            </a>
+            <a href="mailto:bishallamichhane24@gmail.com" class="btn btn-ghost">
+              <span>Say Hello</span>
             </a>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <div class="floating-terminal">
-            <div class="terminal-header">
-              <div class="terminal-controls">
-                <span class="terminal-control red"></span>
-                <span class="terminal-control yellow"></span>
-                <span class="terminal-control green"></span>
-              </div>
-              <div class="terminal-title">~ php artisan serve</div>
-            </div>
-            <div class="terminal-body">
-              <div class="terminal-line">
-                <span class="prompt">$ </span>
-                <span class="command typing-animation"
-                  >php artisan optimize:performance</span
-                >
-              </div>
-              <div class="terminal-output">
-                <div class="success-message">
-                  ✓ API response time: 1s (80% improvement)
-                </div>
-                <div class="server-info">
-                  Database queries optimized: 33% faster
-                </div>
-                <div class="server-url">Technical debt reduced: 30%</div>
-              </div>
-            </div>
+        <aside class="hero-panel" aria-label="Quick facts">
+          <div class="panel-row">
+            <span class="panel-key">Status</span
+            ><span class="panel-val">Open to opportunities</span>
           </div>
+          <div class="panel-row">
+            <span class="panel-key">Based</span
+            ><span class="panel-val">Kathmandu, Nepal</span>
+          </div>
+          <div class="panel-row">
+            <span class="panel-key">Experience</span
+            ><span class="panel-val">2+ years</span>
+          </div>
+          <div class="panel-row">
+            <span class="panel-key">Focus</span
+            ><span class="panel-val"
+              >APIs &middot; SQL &middot; Multi-tenant SaaS</span
+            >
+          </div>
+          <div class="panel-row">
+            <span class="panel-key">Currently</span
+            ><span class="panel-val">Diagonal Technologies</span>
+          </div>
+          <div class="panel-links">
+            <a
+              href="https://github.com/bishal2408"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+            >
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.15-.02-2.09-3.17.69-3.84-1.36-3.84-1.36-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.34.95.1-.74.4-1.25.73-1.54-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.06-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.17a10.9 10.9 0 0 1 5.72 0c2.18-1.48 3.14-1.17 3.14-1.17.62 1.57.23 2.73.11 3.02.73.8 1.17 1.82 1.17 3.06 0 4.37-2.67 5.33-5.21 5.62.41.36.77 1.07.77 2.15 0 1.55-.01 2.8-.01 3.18 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12.02C23.5 5.74 18.27.5 12 .5Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://linkedin.com/in/bishal-lamichhanee"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </aside>
+      </section>
+
+      <!-- Metrics marquee -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>33% faster SQL queries</span>
+          <span class="dot">&bull;</span>
+          <span>40% less technical debt</span>
+          <span class="dot">&bull;</span>
+          <span>1,000+ concurrent users served</span>
+          <span class="dot">&bull;</span>
+          <span>80% faster page loads</span>
+          <span class="dot">&bull;</span>
+          <span>95% ML model accuracy</span>
+          <span class="dot">&bull;</span>
+          <span>22 feature-flagged modules shipped</span>
+          <span class="dot">&bull;</span>
+          <span>33% faster SQL queries</span>
+          <span class="dot">&bull;</span>
+          <span>40% less technical debt</span>
+          <span class="dot">&bull;</span>
+          <span>1,000+ concurrent users served</span>
+          <span class="dot">&bull;</span>
+          <span>80% faster page loads</span>
+          <span class="dot">&bull;</span>
+          <span>95% ML model accuracy</span>
+          <span class="dot">&bull;</span>
+          <span>22 feature-flagged modules shipped</span>
         </div>
       </div>
 
-      <div class="scroll-indicator">
-        <div class="scroll-mouse">
-          <div class="scroll-wheel"></div>
-        </div>
-        <span class="scroll-text">Scroll to explore</span>
-      </div>
-    </section>
+      <!-- ============ ABOUT ============ -->
+      <section class="section" id="about">
+        <div class="section-inner">
+          <p class="section-label">&sect; 01 &mdash; About</p>
+          <h2 class="section-title">Backend-first,<br />systems-minded.</h2>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-number">01</span>
-          <h2 class="section-title">About Me</h2>
-          <div class="section-decoration"></div>
-        </div>
-
-        <div class="about-content">
-          <div class="about-text">
-            <div class="text-block">
+          <div class="about-grid">
+            <div class="about-copy">
               <p>
-                I'm a backend engineer specializing in building scalable
-                systems, RESTful APIs, and high-performance applications. With
-                2+ years of experience, I've reduced technical debt by 30%,
-                improved API response times by 12%, and optimized database
-                queries achieving 33% performance gains.
+                I'm a backend engineer based in Kathmandu with two-plus years
+                building production systems in Laravel and PHP &mdash; RESTful
+                APIs, multi-tenant SaaS architectures, and the SQL underneath
+                them.
+              </p>
+              <p>
+                Most recently I migrated a legacy ERP at
+                <strong>Diagonal Technologies</strong>
+                onto a modern Laravel foundation, cutting technical debt by 30%
+                and improving maintainability by 40% along the way. I think in
+                terms of domain-driven modular monoliths, the Service-Repository
+                pattern with interface-based DI, and query plans &mdash; not
+                just endpoints.
+              </p>
+              <p>
+                Before that, at <strong>Red&nbsp;Tail&nbsp;Fox</strong>, I
+                shipped production APIs for an event platform handling 1,000+
+                concurrent users and stood up the CI/CD pipelines that kept bugs
+                out of production.
               </p>
             </div>
 
-            <div class="text-block">
-              <p>
-                Currently working at Diagonal Technologies, I focus on
-                modernizing legacy systems and architecting robust backend
-                solutions. Previously at Red Tail Fox, I developed production
-                APIs serving 1,000+ concurrent users and implemented
-                microservice architectures.
-              </p>
-            </div>
-
-            <div class="text-block">
-              <p>
-                I'm proficient in Laravel, PHP, microservices, and SQL
-                optimization with a proven ability to deliver production-grade
-                solutions. I graduated from Tribhuvan University with a BS in
-                Computer Science and Information Technology.
-              </p>
-            </div>
-
-            <div class="stats-grid">
-              <div class="stat-item">
-                <div class="stat-number">5+</div>
-                <div class="stat-label">Major Projects</div>
+            <dl class="about-stats">
+              <div class="stat">
+                <dt>2+</dt>
+                <dd>Years in production backend engineering</dd>
               </div>
-              <div class="stat-item">
-                <div class="stat-number">2+</div>
-                <div class="stat-label">Years Experience</div>
+              <div class="stat">
+                <dt>7</dt>
+                <dd>Production systems shipped end-to-end</dd>
               </div>
-              <div class="stat-item">
-                <div class="stat-number">33%</div>
-                <div class="stat-label">Performance Gains</div>
+              <div class="stat">
+                <dt>33%</dt>
+                <dd>Peak query performance gain on a single system</dd>
               </div>
-            </div>
-          </div>
-
-          <div class="about-visual">
-            <div class="profile-card">
-              <div class="card-glow"></div>
-              <div class="profile-image">
-                <div class="image-placeholder">
-                  <span class="dev-icon">👨‍💻</span>
-                </div>
-                <div class="status-indicator">
-                  <span class="status-dot"></span>
-                  <span class="status-text">Available for opportunities</span>
-                </div>
-              </div>
-            </div>
+            </dl>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-number">02</span>
-          <h2 class="section-title">Skills & Expertise</h2>
-          <div class="section-decoration"></div>
-        </div>
-
-        <div class="skills-content">
-          <div class="skills-categories">
-            <div class="skill-category active" data-category="backend">
-              <div class="category-icon">🚀</div>
-              <div class="category-name">Backend</div>
-            </div>
-            <div class="skill-category" data-category="frontend">
-              <div class="category-icon">🎨</div>
-              <div class="category-name">Frontend</div>
-            </div>
-            <div class="skill-category" data-category="database">
-              <div class="category-icon">💾</div>
-              <div class="category-name">Database</div>
-            </div>
-            <div class="skill-category" data-category="tools">
-              <div class="category-icon">🛠️</div>
-              <div class="category-name">Tools</div>
-            </div>
-          </div>
+      <!-- ============ SKILLS ============ -->
+      <section class="section section-alt" id="skills">
+        <div class="section-inner">
+          <p class="section-label">&sect; 02 &mdash; Skills</p>
+          <h2 class="section-title">Toolbox.</h2>
 
           <div class="skills-grid">
-            <div class="skill-item" data-category="backend">
-              <div class="skill-icon">
-                <img
-                  src="https://laravel.com/img/logomark.min.svg"
-                  alt="Laravel"
-                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
-                />
-                <span style="display: none">L</span>
-              </div>
-              <div class="skill-info">
-                <div class="skill-name">Laravel</div>
-                <div class="skill-level">Expert</div>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="95"></div>
+            <div class="skill-card">
+              <h3>Backend &amp; Architecture</h3>
+              <div class="tag-row">
+                <span class="tag">RESTful APIs</span>
+                <span class="tag">Service-Repository + Interface DI</span>
+                <span class="tag">Domain-Driven Design</span>
+                <span class="tag">Modular Monolith</span>
+                <span class="tag">Multi-Tenant SaaS</span>
+                <span class="tag">Feature-Flag Architecture</span>
+                <span class="tag">Microservices</span>
               </div>
             </div>
 
-            <div class="skill-item" data-category="backend">
-              <div class="skill-icon">PHP</div>
-              <div class="skill-info">
-                <div class="skill-name">PHP</div>
-                <div class="skill-level">Advanced</div>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="90"></div>
-              </div>
-            </div>
-
-            <div class="skill-item" data-category="backend">
-              <div class="skill-icon">API</div>
-              <div class="skill-info">
-                <div class="skill-name">RESTful APIs</div>
-                <div class="skill-level">Advanced</div>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="92"></div>
+            <div class="skill-card">
+              <h3>Languages</h3>
+              <div class="tag-row">
+                <span class="tag">PHP</span>
+                <span class="tag">SQL</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Python</span>
               </div>
             </div>
 
-            <div class="skill-item" data-category="backend">
-              <div class="skill-icon">MS</div>
-              <div class="skill-info">
-                <div class="skill-name">Microservices</div>
-                <div class="skill-level">Intermediate</div>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="85"></div>
-              </div>
-            </div>
-
-            <div class="skill-item" data-category="frontend">
-              <div class="skill-icon">R</div>
-              <div class="skill-info">
-                <div class="skill-name">React</div>
-                <div class="skill-level">Intermediate</div>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="75"></div>
+            <div class="skill-card">
+              <h3>Frameworks</h3>
+              <div class="tag-row">
+                <span class="tag">Laravel 12</span>
+                <span class="tag">Filament PHP</span>
+                <span class="tag">Inertia.js</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">React</span>
               </div>
             </div>
 
-            <div class="skill-item" data-category="frontend">
-              <div class="skill-icon">JS</div>
-              <div class="skill-info">
-                <div class="skill-name">JavaScript</div>
-                <div class="skill-level">Intermediate</div>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="80"></div>
-              </div>
-            </div>
-
-            <div class="skill-item" data-category="frontend">
-              <div class="skill-icon">I</div>
-              <div class="skill-info">
-                <div class="skill-name">Inertia.js</div>
-                <div class="skill-level">Intermediate</div>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="78"></div>
+            <div class="skill-card">
+              <h3>Databases</h3>
+              <div class="tag-row">
+                <span class="tag">PostgreSQL &middot; JSONB / Window Fns</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">MariaDB</span>
+                <span class="tag">Query Optimization</span>
+                <span class="tag">Indexing &amp; Schema Design</span>
               </div>
             </div>
 
-            <div class="skill-item" data-category="database">
-              <div class="skill-icon">🗄️</div>
-              <div class="skill-info">
-                <div class="skill-name">MySQL</div>
-                <div class="skill-level">Advanced</div>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="88"></div>
-              </div>
-            </div>
-
-            <div class="skill-item" data-category="database">
-              <div class="skill-icon">🗄️</div>
-              <div class="skill-info">
-                <div class="skill-name">MariaDB</div>
-                <div class="skill-level">Advanced</div>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="88"></div>
+            <div class="skill-card">
+              <h3>Auth &amp; Security</h3>
+              <div class="tag-row">
+                <span class="tag">OAuth2 &middot; Laravel Passport</span>
+                <span class="tag">RBAC &middot; Spatie Permission</span>
+                <span class="tag">httpOnly Cookies</span>
+                <span class="tag">Rate Limiting</span>
+                <span class="tag">Activity Logging</span>
               </div>
             </div>
 
-            <div class="skill-item" data-category="database">
-              <div class="skill-icon">⚡</div>
-              <div class="skill-info">
-                <div class="skill-name">Query Optimization</div>
-                <div class="skill-level">Advanced</div>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="85"></div>
+            <div class="skill-card">
+              <h3>Real-Time</h3>
+              <div class="tag-row">
+                <span class="tag">WebSockets &middot; Reverb / Echo</span>
+                <span class="tag">Queues &middot; Horizon + Redis</span>
               </div>
             </div>
 
-            <div class="skill-item" data-category="tools">
-              <div class="skill-icon">🐳</div>
-              <div class="skill-info">
-                <div class="skill-name">Docker</div>
-                <div class="skill-level">Intermediate</div>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="75"></div>
-              </div>
-            </div>
-
-            <div class="skill-item" data-category="tools">
-              <div class="skill-icon">Git</div>
-              <div class="skill-info">
-                <div class="skill-name">Git & GitLab</div>
-                <div class="skill-level">Advanced</div>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="85"></div>
+            <div class="skill-card">
+              <h3>DevOps &amp; Tools</h3>
+              <div class="tag-row">
+                <span class="tag">Docker</span>
+                <span class="tag">Redis</span>
+                <span class="tag">Git &amp; GitLab</span>
+                <span class="tag">CI/CD Pipelines</span>
+                <span class="tag">Postman</span>
               </div>
             </div>
 
-            <div class="skill-item" data-category="tools">
-              <div class="skill-icon">CI</div>
-              <div class="skill-info">
-                <div class="skill-name">CI/CD</div>
-                <div class="skill-level">Intermediate</div>
-              </div>
-              <div class="skill-bar">
-                <div class="skill-progress" data-progress="78"></div>
+            <div class="skill-card">
+              <h3>Frontend</h3>
+              <div class="tag-row">
+                <span class="tag">Next.js &middot; App Router</span>
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Tailwind CSS</span>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-number">03</span>
-          <h2 class="section-title">Experience</h2>
-          <div class="section-decoration"></div>
+      <!-- ============ EXPERIENCE ============ -->
+      <section class="section" id="experience">
+        <div class="section-inner">
+          <p class="section-label">&sect; 03 &mdash; Experience</p>
+          <h2 class="section-title">Where I've worked.</h2>
+
+          <ol class="timeline">
+            <li class="timeline-item">
+              <div class="timeline-when">
+                <span class="when-range">Nov 2024 &mdash; Present</span>
+              </div>
+              <div class="timeline-body">
+                <h3>Software Engineer</h3>
+                <p class="timeline-org">
+                  Diagonal Technologies Pvt. Ltd. &middot; Kathmandu, Nepal
+                </p>
+                <ul>
+                  <li>
+                    Migrated a legacy PHP ERP to Laravel, reducing technical
+                    debt by 30% and improving maintainability by 40%
+                  </li>
+                  <li>
+                    Designed RESTful APIs using the Service-Repository pattern
+                    with interface-based dependency injection, increasing code
+                    reusability by 40%
+                  </li>
+                  <li>
+                    Optimized SQL queries and database schemas, achieving a 33%
+                    performance improvement across all system modules
+                  </li>
+                  <li>
+                    Implemented an RBAC system with secure authentication and
+                    role-scoped access, protecting sensitive enterprise data
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <div class="timeline-when">
+                <span class="when-range">Mar 2023 &mdash; Nov 2023</span>
+              </div>
+              <div class="timeline-body">
+                <h3>Backend Developer</h3>
+                <p class="timeline-org">
+                  Red Tail Fox Pvt. Ltd. &middot; Kathmandu, Nepal
+                </p>
+                <ul>
+                  <li>
+                    Developed production APIs for an event platform serving
+                    1,000+ concurrent users, improving response times by 12%
+                  </li>
+                  <li>
+                    Implemented a microservice architecture enabling independent
+                    service scaling and zero-downtime deployments
+                  </li>
+                  <li>
+                    Established CI/CD pipelines, reducing production bugs by 10%
+                    and accelerating deployment cycles
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="timeline-item">
+              <div class="timeline-when">
+                <span class="when-range">Nov 2022 &mdash; Feb 2023</span>
+              </div>
+              <div class="timeline-body">
+                <h3>Backend Developer Intern</h3>
+                <p class="timeline-org">
+                  Red Tail Fox Pvt. Ltd. &middot; Kathmandu, Nepal
+                </p>
+                <ul>
+                  <li>
+                    Built scalable APIs with complex business logic supporting a
+                    multi-relational database architecture
+                  </li>
+                  <li>
+                    Enhanced system reliability through comprehensive error
+                    handling, reducing server crashes and debugging time
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ol>
         </div>
-        <div class="experience-timeline">
-          <div class="experience-item">
-            <div class="exp-header">
-              <span class="exp-role">Software Engineer</span>
-              <span class="exp-company">@ Diagonal Technologies Pvt. Ltd.</span>
-              <span class="exp-duration">Nov 2024 – Present</span>
-            </div>
-            <div class="exp-description">
-              Migrating legacy PHP ERP to Laravel framework, reducing technical
-              debt by 30% and improving maintainability by 40%. Built RESTful
-              APIs using Service-Repository pattern, optimized SQL queries
-              achieving 33% performance improvement, and implemented RBAC system
-              with secure authentication.
-            </div>
-          </div>
-          <div class="experience-item">
-            <div class="exp-header">
-              <span class="exp-role">Backend Developer</span>
-              <span class="exp-company">@ Red Tail Fox Pvt. Ltd.</span>
-              <span class="exp-duration">Mar 2023 – Nov 2023</span>
-            </div>
-            <div class="exp-description">
-              Developed production APIs for event platform serving 1,000+
-              concurrent users, improving response times by 12%. Implemented
-              microservice architecture enabling independent service scaling and
-              established CI/CD pipelines reducing production bugs by 10%.
-            </div>
-          </div>
-          <div class="experience-item">
-            <div class="exp-header">
-              <span class="exp-role">Backend Developer Intern</span>
-              <span class="exp-company">@ Red Tail Fox Pvt. Ltd.</span>
-              <span class="exp-duration">Nov 2022 – Feb 2023</span>
-            </div>
-            <div class="exp-description">
-              Built scalable APIs with complex business logic supporting
-              multi-relational database architecture. Enhanced system
-              reliability through comprehensive error handling, reducing server
-              crashes and debugging time.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-number">04</span>
-          <h2 class="section-title">Featured Projects</h2>
-          <div class="section-decoration"></div>
-        </div>
+      <!-- ============ PROJECTS ============ -->
+      <section class="section section-alt" id="work">
+        <div class="section-inner">
+          <p class="section-label">&sect; 04 &mdash; Selected Work</p>
+          <h2 class="section-title">Things I've built.</h2>
 
-        <div class="projects-grid">
-          <div class="project-card featured">
-            <div class="project-image">
-              <div class="project-overlay">
-                <div class="project-links">
-                  <a href="#" class="project-link">
-                    <span class="link-icon">🔗</span>
-                    <span class="link-text">Private</span>
-                  </a>
-                  <a href="#" class="project-link">
-                    <span class="link-icon">🏢</span>
-                    <span class="link-text">Enterprise</span>
-                  </a>
-                </div>
-              </div>
-              <div class="project-preview">
-                <div class="browser-mockup">
-                  <div class="browser-header">
-                    <div class="browser-controls">
-                      <span></span>
-                      <span></span>
-                      <span></span>
-                    </div>
-                    <div class="browser-url">erp.enterprise.com</div>
-                  </div>
-                  <div class="browser-content">
-                    <div class="app-interface">
-                      <div class="sidebar"></div>
-                      <div class="main-content">
-                        <div class="content-block"></div>
-                        <div class="content-block"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          <article class="project-feature">
+            <div class="project-feature-head">
+              <span class="project-badge"
+                >Featured &middot; Private / Enterprise</span
+              >
+              <h3>Multi-Tenant Hotel Management System</h3>
+              <div class="tag-row">
+                <span class="tag">Laravel 12</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Reverb</span>
+                <span class="tag">Redis</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Next.js</span>
               </div>
             </div>
-            <div class="project-content">
-              <div class="project-category">Featured Project</div>
-              <h3 class="project-title">Enterprise ERP System</h3>
-              <div class="project-description">
-                Modernized legacy PHP ERP system into Laravel-based
-                architecture, achieving 40% maintainability improvement and 33%
-                database performance gain. Designed RESTful APIs with
-                Service-Repository pattern, integrated third-party APIs, and
-                automated workflows with job scheduling for dynamic email
-                delivery and task execution.
-              </div>
-              <div class="project-tech">
-                <span class="tech-tag">Laravel</span>
-                <span class="tech-tag">PHP</span>
-                <span class="tech-tag">MariaDB</span>
-                <span class="tech-tag">Docker</span>
-                <span class="tech-tag">RESTful API</span>
-              </div>
-            </div>
-          </div>
+            <ul>
+              <li>
+                Architected a full-stack multi-tenant platform covering 22
+                feature-flag-driven modules (Reservations, Housekeeping,
+                Billing, HR, Analytics, CRM, and more) &mdash; flags toggle per
+                property with no redeployment
+              </li>
+              <li>
+                Applied a domain-driven modular monolith with a strict
+                Service-Repository pattern and interface-based DI across 22
+                independent domains, each with its own migrations, providers and
+                routes
+              </li>
+              <li>
+                Designed a PostgreSQL schema with JSONB translatable fields,
+                property-scoped Global Scopes for row-level multi-tenancy, and
+                window functions for RevPAR/ADR analytics
+              </li>
+              <li>
+                Built an OAuth2 auth flow (Laravel Passport) with
+                property-scoped Spatie roles and httpOnly-cookie token storage
+              </li>
+            </ul>
+          </article>
 
-          <div class="project-card">
-            <div class="project-content">
-              <div class="project-category">Gaming Platform</div>
-              <h3 class="project-title">Ramailo Games Platform</h3>
-              <div class="project-description">
-                Optimized database queries reducing load time from 5s to 1s (80%
-                improvement) boosting user engagement. Implemented microservices
-                architecture with encryption ensuring secure data handling and
-                regulatory compliance.
-              </div>
-              <div class="project-tech">
-                <span class="tech-tag">Laravel</span>
-                <span class="tech-tag">MySQL</span>
-                <span class="tech-tag">Microservices</span>
-                <span class="tech-tag">Encryption</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="project-link-small">🔗 Private</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-content">
-              <div class="project-category">Real-Time Communication</div>
-              <h3 class="project-title">Real-Time Chat Application</h3>
-              <div class="project-description">
-                Built production-ready messaging system with authentication,
-                group chats, typing indicators, and presence detection using
-                WebSocket technology for instant communication.
-              </div>
-              <div class="project-tech">
-                <span class="tech-tag">Reverb</span>
-                <span class="tech-tag">WebSocket</span>
-                <span class="tech-tag">MySQL</span>
-                <span class="tech-tag">Inertia.js</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/bishal2408"
-                  class="project-link-small"
-                  >📱 GitHub</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-content">
-              <div class="project-category">Event Management</div>
-              <h3 class="project-title">Work Event Management System</h3>
-              <div class="project-description">
-                Architected calendar system with recurring event patterns,
-                real-time updates, and role-based permissions using Filament PHP
-                for enterprise event coordination.
-              </div>
-              <div class="project-tech">
-                <span class="tech-tag">Filament PHP</span>
-                <span class="tech-tag">MariaDB</span>
-                <span class="tech-tag">RBAC</span>
-              </div>
-              <div class="project-links">
-                <a href="#" class="project-link-small">🔗 Private</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <div class="project-content">
-              <div class="project-category">Machine Learning</div>
-              <h3 class="project-title">Email/SMS Spam Detection</h3>
-              <div class="project-description">
-                Developed ML model achieving 95% accuracy using Naive Bayes
-                algorithm with comprehensive data preprocessing and feature
-                engineering for spam classification.
-              </div>
-              <div class="project-tech">
-                <span class="tech-tag">Python</span>
-                <span class="tech-tag">Naive Bayes</span>
-                <span class="tech-tag">ML</span>
-                <span class="tech-tag">Google Colab</span>
-              </div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/bishal2408"
-                  class="project-link-small"
-                  >📱 GitHub</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="section-header">
-          <span class="section-number">05</span>
-          <h2 class="section-title">Let's Build Something Amazing</h2>
-          <div class="section-decoration"></div>
-        </div>
-
-        <div class="contact-content">
-          <div class="contact-info">
-            <div class="contact-text">
-              <h3>Ready to start your next project?</h3>
+          <div class="projects-grid">
+            <article class="project-card">
+              <span class="project-badge">Private / Enterprise</span>
+              <h3>Enterprise ERP System</h3>
               <p>
-                I'm always excited to work on challenging backend systems and
-                scalable solutions. Let's discuss how we can build
-                high-performance applications together.
+                Modernized a legacy ERP into a Laravel architecture &mdash; 40%
+                maintainability gain, 33% database performance gain.
+                Service-Repository REST APIs, third-party integrations, and
+                job-scheduled workflows for automated email delivery.
               </p>
-            </div>
-
-            <div class="contact-methods">
-              <div class="contact-method">
-                <div class="method-icon">📧</div>
-                <div class="method-info">
-                  <div class="method-label">Email</div>
-                  <div class="method-value">bishallamichhane24@gmail.com</div>
-                </div>
+              <div class="tag-row small">
+                <span class="tag">Laravel</span><span class="tag">PHP</span
+                ><span class="tag">MariaDB</span><span class="tag">Docker</span>
               </div>
+            </article>
 
-              <div class="contact-method">
-                <div class="method-icon">📱</div>
-                <div class="method-info">
-                  <div class="method-label">Phone</div>
-                  <div class="method-value">+977-9860710481</div>
-                </div>
+            <article class="project-card">
+              <span class="project-badge">Private</span>
+              <h3>Learning Management System</h3>
+              <p>
+                Full-stack LMS for course management, enrollment and content
+                delivery. Timed mock-test module with instant scoring, a premium
+                subscription + payment flow, and a course review &amp; rating
+                system.
+              </p>
+              <div class="tag-row small">
+                <span class="tag">Laravel</span><span class="tag">Blade</span
+                ><span class="tag">MySQL</span>
               </div>
+            </article>
 
-              <div class="contact-method">
-                <div class="method-icon">📍</div>
-                <div class="method-info">
-                  <div class="method-label">Location</div>
-                  <div class="method-value">Kathmandu, Nepal</div>
-                </div>
+            <article class="project-card">
+              <span class="project-badge">Private / Enterprise</span>
+              <h3>Ramailo Games Platform</h3>
+              <p>
+                Optimized database queries, cutting load time from 5s to 1s (80%
+                faster) and lifting user engagement. Microservices with
+                end-to-end encryption for secure, compliant data handling.
+              </p>
+              <div class="tag-row small">
+                <span class="tag">Laravel</span><span class="tag">MySQL</span
+                ><span class="tag">Microservices</span>
               </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="contact-form-container">
-            <form class="contact-form">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="name">Name</label>
-                  <input type="text" id="name" name="name" required />
-                  <span class="form-underline"></span>
-                </div>
-
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required />
-                  <span class="form-underline"></span>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required />
-                <span class="form-underline"></span>
-              </div>
-
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="5"
-                  required
-                ></textarea>
-                <span class="form-underline"></span>
-              </div>
-
-              <button type="submit" class="submit-btn">
-                <span class="btn-text">Send Message</span>
-                <span class="btn-loading">
-                  <div class="loading-spinner"></div>
-                </span>
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-info">
-            <div class="footer-logo">
-              <span class="logo-bracket">&lt;</span>
-              <span class="logo-text">bishalLamichhane</span>
-              <span class="logo-bracket">/&gt;</span>
-            </div>
-            <p class="footer-description">
-              Backend Engineer specializing in Laravel, PHP, and scalable system
-              architecture.
-            </p>
-          </div>
-
-          <div class="footer-links">
-            <div class="link-group">
-              <h4>Navigation</h4>
-              <a href="#home">Home</a>
-              <a href="#about">About</a>
-              <a href="#skills">Skills</a>
-              <a href="#projects">Projects</a>
-              <a href="#contact">Contact</a>
-            </div>
-
-            <div class="link-group">
-              <h4>Connect</h4>
-              <a href="https://github.com/bishal2408" target="_blank">GitHub</a>
+            <article class="project-card">
               <a
-                href="https://linkedin.com/in/bishal-lamichhanee"
-                target="_blank"
-                >LinkedIn</a
-              >
-              <a href="mailto:bishallamichhane24@gmail.com" target="_blank"
-                >Email</a
-              >
-            </div>
-          </div>
-
-          <div class="footer-social">
-            <div class="social-links">
-              <a
+                class="card-link"
                 href="https://github.com/bishal2408"
-                class="social-link"
-                title="GitHub"
                 target="_blank"
+                rel="noopener"
+                aria-label="View on GitHub"
               >
-                <span class="social-icon">🔗</span>
+                <span class="project-badge badge-link">GitHub &rarr;</span>
               </a>
+              <h3>Real-Time Chat Application</h3>
+              <p>
+                Production-ready messaging system with authentication, group
+                chats, typing indicators and presence detection, built on
+                Laravel Reverb WebSockets.
+              </p>
+              <div class="tag-row small">
+                <span class="tag">Reverb</span><span class="tag">WebSocket</span
+                ><span class="tag">Inertia.js</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <span class="project-badge">Private</span>
+              <h3>Work Event Management System</h3>
+              <p>
+                Calendar system with recurring event patterns, real-time updates
+                and role-based permissions, built on Filament PHP for enterprise
+                event coordination.
+              </p>
+              <div class="tag-row small">
+                <span class="tag">Filament PHP</span
+                ><span class="tag">MariaDB</span><span class="tag">RBAC</span>
+              </div>
+            </article>
+
+            <article class="project-card">
               <a
-                href="https://linkedin.com/in/bishal-lamichhanee"
-                class="social-link"
-                title="LinkedIn"
+                class="card-link"
+                href="https://github.com/bishal2408"
                 target="_blank"
+                rel="noopener"
+                aria-label="View on GitHub"
               >
-                <span class="social-icon">💼</span>
+                <span class="project-badge badge-link">GitHub &rarr;</span>
               </a>
-              <a
-                href="mailto:bishallamichhane24@gmail.com"
-                class="social-link"
-                title="Email"
-              >
-                <span class="social-icon">✉️</span>
-              </a>
+              <h3>Email/SMS Spam Detection</h3>
+              <p>
+                ML model achieving 95% accuracy using Naive Bayes, with a full
+                data preprocessing and feature-engineering pipeline built in
+                Google Colab.
+              </p>
+              <div class="tag-row small">
+                <span class="tag">Python</span
+                ><span class="tag">Naive Bayes</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EDUCATION ============ -->
+      <section class="section" id="education">
+        <div class="section-inner">
+          <p class="section-label">
+            &sect; 05 &mdash; Education &amp; Certifications
+          </p>
+          <h2 class="section-title">Background.</h2>
+
+          <div class="edu-grid">
+            <div class="edu-item">
+              <div class="edu-when">Jul 2018 &mdash; May 2023</div>
+              <div class="edu-body">
+                <h3>BSc. Computer Science and Information Technology</h3>
+                <p>
+                  Tribhuvan University &middot; National College of Computer
+                  Studies, Kathmandu, Nepal
+                </p>
+                <p class="edu-meta">GPA: 82.29%</p>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-when">Mar 2024</div>
+              <div class="edu-body">
+                <h3>Introduction to Generative AI</h3>
+                <p>Google</p>
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="footer-bottom">
-          <p>&copy; 2025 Bishal Lamichhane. Crafted with 💜 and lots of ☕</p>
+      <!-- ============ CONTACT ============ -->
+      <section class="section section-alt" id="contact">
+        <div class="section-inner">
+          <p class="section-label">&sect; 06 &mdash; Contact</p>
+          <h2 class="section-title">Let's build something<br />that scales.</h2>
+          <p class="contact-lede">
+            Open to backend and full-stack roles, freelance work, or just a good
+            conversation about database schemas. Reach out directly &mdash; I
+            reply quickly.
+          </p>
+
+          <div class="contact-grid">
+            <a class="contact-item" href="mailto:bishallamichhane24@gmail.com">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">bishallamichhane24@gmail.com</span>
+            </a>
+            <a class="contact-item" href="tel:+9779860710481">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+977 986&nbsp;071&nbsp;0481</span>
+            </a>
+            <div class="contact-item contact-item-static">
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Kathmandu, Nepal</span>
+            </div>
+            <a
+              class="contact-item"
+              href="https://github.com/bishal2408"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/bishal2408</span>
+            </a>
+            <a
+              class="contact-item"
+              href="https://linkedin.com/in/bishal-lamichhanee"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value"
+                >linkedin.com/in/bishal-lamichhanee</span
+              >
+            </a>
+          </div>
         </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <a href="#top" class="nav-mark">
+          <span class="mark-glyph">BL</span>
+          <span class="mark-label">Bishal&nbsp;Lamichhane</span>
+        </a>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Bishal Lamichhane. Built from scratch,
+          no template.
+        </p>
       </div>
     </footer>
 
